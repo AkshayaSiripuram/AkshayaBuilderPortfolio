@@ -3,19 +3,35 @@ package com.builderportfolio.view.util;
 import com.builderportfolio.service.ProjectService;
 import com.builderportfolio.service.UserService;
 
-// Factory class providing centralized access to singleton service instances
-// Ensures consistent usage of the same UserService and ProjectService across the application
+/**
+ * Factory class providing centralized access to singleton service instances.
+ * <p>
+ * Ensures consistent usage of the same {@link UserService} and {@link ProjectService}
+ * across the application.
+ * </p>
+ */
 public class ServiceFactory {
 
-    private static final UserService userService = new UserService(); // singleton UserService
-    private static final ProjectService projectService = new ProjectService(); // singleton ProjectService
+    /** Singleton instance of UserService */
+    private static final UserService userService = new UserService();
 
-    // Returns the singleton UserService instance
+    /** Singleton instance of ProjectService */
+    private static final ProjectService projectService = new ProjectService();
+
+    /**
+     * Returns the singleton {@link UserService} instance.
+     *
+     * @return the UserService singleton
+     */
     public static UserService userService() {
         return userService;
     }
 
-    // Returns the singleton ProjectService instance
+    /**
+     * Returns the singleton {@link ProjectService} instance.
+     *
+     * @return the ProjectService singleton
+     */
     public static ProjectService projectService() {
         return projectService;
     }

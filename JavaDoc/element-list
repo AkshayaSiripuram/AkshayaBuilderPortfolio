@@ -1,0 +1,8 @@
+com.builderportfolio
+com.builderportfolio.dao
+com.builderportfolio.exception
+com.builderportfolio.model
+com.builderportfolio.service
+com.builderportfolio.view
+com.builderportfolio.view.UserMenuView
+com.builderportfolio.view.util
